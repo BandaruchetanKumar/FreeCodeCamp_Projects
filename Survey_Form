@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>survey form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+<label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+<label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required></label>
+<label id="number-label">Age<input id="number" type="number" min="18" max="70" placeholder="Enter"></label>
+<p>Would you recommend freeCodeCamp to a friend?</p>
+<label for="definitely"><input id="definitely" name="recommend" value="1" type="radio">Definitely</label>
+<label for="maybe"><input value="2" type="radio" id="maybe" name="recommend">May Be</label>
+<label for="notsure"><input value="3" type="radio" id="notsure" name="recommend">Not Sure</label>
+<p>Which option best describes your current role?</p>
+<select id="dropdown">
+<option value="">Select an option</option>
+<option value="1">Graduate</option>
+<option value="2">Under-Graduate</option>
+<option value="3">Post-Graduate</option>
+<option value="4">other</option>
+<option value="5">None</option>
+</select>
+<p>What would you like to see improved? (Check all that apply)</p>
+<label for="feprojects"><input value="1" type="checkbox" >Front-end Projects</label>
+<label for="beprojects"><input value="2" type="checkbox" >Back-end Projects</label>
+<label for="data"><input value="3" type="checkbox" >Data Visualization</label>
+<label for="challenges"><input value="4" type="checkbox" >Challenges</label>
+<label for="source"><input value="5" type="checkbox" >Open Source Community</label>
+<label for="courses"><input value="6" type="checkbox" >Additional Courses</label>
+
+<label>Any comments or suggestions?<textarea placeholder="Enter your comments here..."></textarea></label>
+
+<button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
